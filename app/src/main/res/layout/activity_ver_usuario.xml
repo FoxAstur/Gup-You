@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".VerUsuarioActivity">
+
+    <LinearLayout
+        android:id="@+id/linear_llayout"
+        android:layout_width="406dp"
+        android:layout_height="545dp"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="1dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/img_perfil"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:contentDescription="@string/imgFoto"
+            app:srcCompat="@drawable/ic_user" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="match_parent"
+            android:layout_height="39dp"
+            android:background="?android:attr/listDivider"
+            android:backgroundTint="@color/colorPrimary" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtView_Comentartios"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/txt_Comentarios"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:text="@string/gcm_defaultSenderId"
+            android:textAlignment="center"
+            tools:text="@string/txt_descrip_comentarios" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/txtView_Valoraciones"
+            android:textAlignment="center"
+            android:textColor="@color/colorPrimary"
+            tools:text="@string/txtView_Valoraciones" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="?android:attr/listDivider" />
+
+        <TextView
+            android:id="@+id/txt_Valoraciones"
+            android:layout_width="match_parent"
+            android:layout_height="208dp"
+            android:text="@string/txt_descrip_valoraciones"
+            android:textAlignment="center"
+            tools:text="@string/txt_descrip_valoraciones" />
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>
